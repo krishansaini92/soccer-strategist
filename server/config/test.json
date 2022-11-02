@@ -1,0 +1,28 @@
+{
+  "appName": "Fantasy game",
+  "server": {
+    "port": 2345,
+    "host": "localhost",
+    "corsWhitelist": ["http://localhost:2345"]
+  },
+  "logging": {
+    "level": "error",
+    "console": {
+      "isEnabled": true
+    },
+    "fs": {
+      "isEnabled": false,
+      "logDir": "./logs"
+    }
+  },
+  "database": {
+    "url": "mongodb://mongo:27017/fantasy-game-krishan-test",
+    "user": "",
+    "password": ""
+  },
+  "session": {
+    "key": "RandomKey",
+    "expiryTtl": "30d",
+    "refreshTtl": "1d"
+  }
+}

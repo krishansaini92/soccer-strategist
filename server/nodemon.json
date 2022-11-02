@@ -1,0 +1,11 @@
+{
+  "watch": ["src"],
+  "ext": "js",
+  "ignore": ["**/flycheck_*"],
+  "exec": "run-p -c --silent 'lint ./src -- --quiet' start",
+  "events": {
+    "restart": "kill-port 80",
+    "crash": "kill-port 80"
+  },
+  "delay": "1500"
+}

@@ -1,0 +1,87 @@
+{
+  "PHONE_NOT_EXIST": {
+    "statusCode": 400,
+    "message": "Phone number does not exist in our database",
+    "error": "PHONE_NOT_EXIST"
+  },
+  "INVALID_NAME": {
+    "statusCode": 400,
+    "message": "Please provide a valid name",
+    "error": "INVALID_NAME"
+  },
+  "INVALID_EMAIL": {
+    "statusCode": 400,
+    "message": "Please provide a valid email",
+    "error": "INVALID_EMAIL"
+  },
+  "EMAIL_ALREADY_REGISTERED": {
+    "statusCode": 400,
+    "message": "Email is already associated with another account",
+    "error": "EMAIL_ALREADY_REGISTERED"
+  },
+  "INVALID_PASSWORD": {
+    "statusCode": 400,
+    "message": "Please provide a valid password",
+    "error": "INVALID_PASSWORD"
+  },
+  "INVALID_CREDENTIALS": {
+    "statusCode": 400,
+    "message": "Provided credentials do not match",
+    "error": "INVALID_CREDENTIALS"
+  },
+  "INVALID_REFRESH_TOKEN": {
+    "statusCode": 400,
+    "message": "Token is not valid",
+    "error": "INVALID_REFRESH_TOKEN"
+  },
+  "AUTHENTICATION_FAILED": {
+    "statusCode": 401,
+    "message": "Authentication is required",
+    "error": "AUTHENTICATION_FAILED"
+  },
+  "INVALID_ID": {
+    "statusCode": 400,
+    "message": "Invalid id provided",
+    "error": "INVALID_ID"
+  },
+  "UNAUTHORIZED": {
+    "statusCode": 403,
+    "message": "Unauthorized to perform operation",
+    "error": "UNAUTHORIZED"
+  },
+  "PLAYER_ASSOCIATED_WITH_TEAM": {
+    "statusCode": 400,
+    "message": "Player is associated with another team",
+    "error": "PLAYER_ASSOCIATED_WITH_TEAM"
+  },
+  "INVALID_USER_ID": {
+    "statusCode": 400,
+    "message": "Invalid user id provided",
+    "error": "INVALID_USER_ID"
+  },
+  "INVALID_PLAYER_ID": {
+    "statusCode": 400,
+    "message": "Invalid player id provided",
+    "error": "INVALID_PLAYER_ID"
+  },
+  "INVALID_TEAM_ID": {
+    "statusCode": 400,
+    "message": "Invalid team id provided",
+    "error": "INVALID_TEAM_ID"
+  },
+  "PLAYER_ALREADY_TRANSFERABLE": {
+    "statusCode": 400,
+    "message": "Player is already in the market",
+    "error": "PLAYER_ALREADY_TRANSFERABLE"
+  },
+  "TEAM_ID_REQUIRED": {
+    "statusCode": 400,
+    "message": "Team id is required",
+    "error": "TEAM_ID_REQUIRED"
+  },
+  "INSUFFICIENT_FUNDS": {
+    "statusCode": 400,
+    "message": "Team does not have sufficient funds",
+    "error": "INSUFFICIENT_FUNDS"
+  }
+}

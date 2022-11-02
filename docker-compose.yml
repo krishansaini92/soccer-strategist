@@ -1,0 +1,22 @@
+version: "3"
+services:
+  mongo:
+    image: mongo
+    ports:
+      - 27017:27017
+    logging:
+      driver: none
+    volumes:
+      - ./docker-volumes/db/:/data/db
+
+  server:
+    image: server
+    build: ./server
+    depends_on:
+      - mongo
+    ports:
+      - 3333:80
+    volumes:
+      - ./server:/app
+      - /app/node_modules
+    command: npm run start
