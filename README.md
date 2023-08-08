@@ -1,46 +1,85 @@
-# Fantasy game - Krishan
+= SoccerStrategist: Your Virtual Pitch ⚽
 
-> Simple application where football/soccer fans will create fantasy teams and will be able to sell or buy players.
+Welcome to `SoccerStrategist`! Embrace the football manager within and curate your unbeatable squad. Designed to fuel the football enthusiast's spirit, this platform provides an arena where strategy meets passion.
 
-## Prerequisite
+:toc: macro
+toc::[]
 
-> Please install docker on your machine (https://docs.docker.com/desktop/mac/install/).  
-If already installed, skip this step.
+== Introduction
 
-## Quick Start
+Football is more than a sport; it's an emotion. With SoccerStrategist, you get to:
+- *Craft* your ultimate football squad.
+- *Engage* in dynamic player trading: Buy and sell based on real-time performances and their market dynamics.
+- *Compete* on leaderboards: Does your team have what it takes to be the best?
 
-> *Below mentioned steps have been tested on mac and ubuntu machine. For windows, steps may differ.*
+== Setting Up
 
-```bash
+Before starting your managerial journey, ensure:
 
-# Run in Docker
+- Docker: Vital for a smooth game experience. Install Docker via link:https://docs.docker.com/desktop/mac/install/[official guide]. If it's already set up, you're good to go!
 
+== Getting Started
+
+These steps have been validated for macOS and Ubuntu. Windows users might encounter minor variations.
+
+=== Launching with Docker
+
+Kick things off with:
+
+----
 docker-compose up -d
-# use -d flag to run in background
+----
 
-```
+NOTE: The `-d` flag lets the app run unobtrusively in the background.
 
-You should be able to access the application on [http://localhost:3333](http://localhost:3333)
-> Please find APIs postman collection in the repo. You can import it using Postman and start using the APIs.
+Post-setup, enter the virtual stadium at link:http://localhost:3333[http://localhost:3333].
 
-```bash
+=== Navigating the APIs
 
-# To view container logs
+The repository houses a tailored API Postman collection. Import it into Postman for effortless backend operations.
+
+=== Handy Commands
+
+* *Monitor Container Logs*:
++ 
+----
 docker-compose logs -f --tail=1000
-
-# To restart container
+----
++
+* *Refresh Containers*:
+To reboot everything or specific elements:
++ 
+----
 docker-compose restart
-docker-compose restart mongo # Will only restart database
-docker-compose restart server # Will only restart node app
-
-# To run application tests
+docker-compose restart mongo       # Just the database
+docker-compose restart server     # Only the Node application
+----
++
+* *Execute Tests*:
+For game stability:
++ 
+----
 docker-compose exec server npm run test
-
-# To do code formatting
+----
++
+* *Beautify Code*:
+Keep things tidy with:
++ 
+----
 docker-compose exec server npm run fmt
-
-# To stop docker containers
+----
++
+* *Exit the Game*:
+When you decide to hang up your managerial boots for the day:
++ 
+----
 docker-compose down
+----
 
+== Share Your Thoughts
 
-```
+How's the gameplay? Your insights shape SoccerStrategist. Share ideas, report glitches, or converse on potential upgrades via our repo. Every opinion makes a difference!
+
+== Wrapping Up
+
+Thanks for choosing SoccerStrategist. Dive deep, strategize well, and may your team emerge as champions!
